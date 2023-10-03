@@ -1,0 +1,38 @@
+
+
+.carrocel-de-imagens{
+    width: 100%;
+    display: flex;    
+    gap: .5rem;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cards{
+    width: 10rem;
+    margin: 3rem 0;
+    border-radius: 1rem;
+    background-color: rgba(17, 16, 16, 0.822);
+    color: white;
+    text-align: center;
+    padding-bottom: .3rem;
+    
+}
+
+.cards img{
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: .4rem;
+}
+
+.cards-imagens{
+    position: relative;
+    padding: 2rem 1rem;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.2)
+    
+}
+
+h2{
+    font-size: 3vw;
+}
+

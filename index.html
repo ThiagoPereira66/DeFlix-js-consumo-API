@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleCards.css">
+
+  <title>test consumo de API</title>
+</head>
+
+<body>
+  <header>
+    <img src="./public/image/claquete.png" alt="">
+    <div class="links">
+      <a href="#">Home</a>
+      <a href="#">Filmes</a>
+      <a href="#">Series</a>
+    </div>
+  </header>
+  <main>
+    <section id="container">
+      <div class="img-fundo"></div>
+      <div class="detalhe-poster">
+        <div class="detalhe">
+          <h1 class="titulo"></h1>
+          <p class="detalhes"></p>
+        </div>
+        <div class="img-poster"></div>
+      </div>
+    </section>
+
+    <section class="cards-imagens" >
+      <h2>Top Filmes</h2>
+      <div class="carrocel-de-imagens">
+      </div>
+    </section>
+    
+    <section class="cards-imagens">
+      <h2>Top Series</h2>
+      <div class="carrocel-de-imagens" id="series">
+      </div>
+    </section>
+
+  </main>
+
+
+  <script type="module" src="/main.js"></script>
+  
+</body>
+
+</html>
