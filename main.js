@@ -15,8 +15,8 @@ async function filmes() {
 function dados(buscaFilmes) {
     document.querySelector('.titulo').innerHTML = buscaFilmes.title
     document.querySelector('.detalhes').innerHTML = buscaFilmes.overview
-    document.querySelector('.img-poster').innerHTML = `<img src=\'https://image.tmdb.org/t/p/original/${buscaFilmes.poster_path}' alt="${buscaFilmes.title}"/>`
-    document.querySelector('.img-fundo').innerHTML = `<img src=\'https://image.tmdb.org/t/p/original/${buscaFilmes.backdrop_path}' alt="${buscaFilmes.title}"/>`
+    document.querySelector('.img-poster').innerHTML = `<img src=\'https://image.tmdb.org/t/p/original${buscaFilmes.poster_path}' alt="${buscaFilmes.title}"/>`
+    document.querySelector('.img-fundo').innerHTML = `<img src=\'https://image.tmdb.org/t/p/original${buscaFilmes.backdrop_path}' alt="${buscaFilmes.title}"/>`
 
     //console.log(buscaFilmes)
 
@@ -36,7 +36,7 @@ function topfilmesResults(buscaTopFilmes) {
     for (const card of buscaTopFilmes) {
         const topFilmes = `
     <div class="cards">
-    <img src="https://image.tmdb.org/t/p/original/${card.poster_path}" alt="${card.title}">
+    <img src="https://image.tmdb.org/t/p/original${card.poster_path}" alt="${card.title}">
     <p>${card.title}</p>
     </div>
     <div class="swiper-pagination"></div>
@@ -62,7 +62,7 @@ function topSeriesResults(buscaSeries) {
     for (const card of buscaSeries) {
         const topSeries = `
     <div class="cards">
-    <img src="https://image.tmdb.org/t/p/original/${card.poster_path}" alt="${card.name}">
+    <img src="https://image.tmdb.org/t/p/original${card.poster_path}" alt="${card.name}">
     <p>${card.name}</p>
     </div>
     <div class="swiper-pagination"></div>
