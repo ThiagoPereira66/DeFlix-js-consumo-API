@@ -1,7 +1,7 @@
 
 
 const chaveApi = 'ed2113b62a75455680a38dc9a8433142'
-const baseUrl = 'https://api.themoviedb.org/3/movie/popular'
+const baseUrl = 'https://api.themoviedb.org/3/movie/popular/'
 
 
 async function filmes() {
@@ -23,7 +23,7 @@ function dados(buscaFilmes) {
 }
 
 async function TopFilmes() {
-    const buscaTopFilmes = await fetch(`https://api.themoviedb.org/3/movie/popular/?api_key=${chaveApi}&language=pt-br&page=1`)
+    const buscaTopFilmes = await fetch(`${baseUrl}?api_key=${chaveApi}&language=pt-br&page=1`)
         .then(resposta => resposta.json())
 
     topfilmesResults(buscaTopFilmes.results)
