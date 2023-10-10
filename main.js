@@ -23,7 +23,7 @@ function dados(buscaFilmes) {
 }
 
 async function TopFilmes() {
-    const buscaTopFilmes = await fetch(`https://api.themoviedb.org/3/movie/popular/?api_key=${chaveApi}&lang=pt_br&page=1`)
+    const buscaTopFilmes = await fetch(`https://api.themoviedb.org/3/movie/popular/?api_key=${chaveApi}&language=pt-br&page=1`)
         .then(resposta => resposta.json())
 
     topfilmesResults(buscaTopFilmes.results)
@@ -50,7 +50,7 @@ function topfilmesResults(buscaTopFilmes) {
 
 
 async function TopSeries() {
-    const buscaSeries = await fetch(`https://api.themoviedb.org/3/tv/top_rated/?api_key=${chaveApi}&lang=pt_br&page=1`)
+    const buscaSeries = await fetch(`https://api.themoviedb.org/3/tv/top_rated/?api_key=${chaveApi}&language=pt-br&page=1`)
         .then(resposta => resposta.json())
 
     topSeriesResults(buscaSeries.results)
