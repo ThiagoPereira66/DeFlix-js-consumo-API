@@ -17,7 +17,7 @@ function dados(buscaFilmes) {
     document.querySelector('.detalhes').innerHTML = buscaFilmes.overview
     document.querySelector('.img-poster').innerHTML = `<img src=\'https://image.tmdb.org/t/p/original${buscaFilmes.poster_path}' alt="${buscaFilmes.title}"/>`
     document.querySelector('.img-fundo').innerHTML = `<img src=\'https://image.tmdb.org/t/p/original${buscaFilmes.backdrop_path}' alt="${buscaFilmes.title}"/>`
-
+   
     //console.log(buscaFilmes)
 
 }
