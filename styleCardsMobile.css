@@ -1,0 +1,26 @@
+@media screen and (max-width: 900px) {
+    .img-fundo,
+    .detalhe{
+        display: none;
+    }
+
+    .img-poster img{
+        width: 100vw;
+    }
+
+    header img{
+        width: 12%;
+    }
+
+    .links a{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    #container{
+        height: 78vh;
+    }
+ }

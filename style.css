@@ -18,10 +18,18 @@ header{
     width: 100vw;
     position: fixed;
     z-index: 1000;    
-    padding: .3rem 1rem;    
+    padding: .7rem 1rem;  
+    transition: background-color .8s;
+    
 }
 header img{
     width: 3.8vw;
+}
+.menu{
+    position: absolute;
+    width: 50px;
+    display: none;    
+    right: 10px;
 }
 
 header .links{

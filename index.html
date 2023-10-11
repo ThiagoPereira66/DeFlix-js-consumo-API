@@ -7,21 +7,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="styleCards.css">
-
+  <link rel="stylesheet" href="./styleCardsMobile.css">
+  
   <title>test consumo de API</title>
 </head>
 
 <body>
   <header>
     <img src="./public/image/claquete.png" alt="">
+    <img src="./public/image/menu-suspenso.png" class="menu">
     <div class="links">
       <a href="#">Home</a>
       <a href="#">Filmes</a>
       <a href="#">Series</a>
+
     </div>
   </header>
   <main>
-    <section id="container" >
+    <section id="container">
       <div class="img-fundo"></div>
       <div class="detalhe-poster">
         <div class="detalhe">
@@ -32,15 +35,21 @@
       </div>
     </section>
 
-    <section class="cards-imagens" >
+    <section class="cards-imagens">
       <h2>Top Filmes</h2>
       <div class="carrocel-de-imagens">
       </div>
     </section>
-    
+
     <section class="cards-imagens">
       <h2>Top Series</h2>
       <div class="carrocel-de-imagens" id="series">
+      </div>
+    </section>
+
+    <section class="cards-imagens">
+      <h2>Top Atores</h2>
+      <div class="carrocel-de-imagens" id="atores">
       </div>
     </section>
 
@@ -48,7 +57,7 @@
 
 
   <script type="module" src="/main.js"></script>
-  
+
 </body>
 
 </html>
